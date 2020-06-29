@@ -1,0 +1,67 @@
+
+apt update && apt upgrade
+
+cd $HOME 
+
+	echo "
+
+	clonando script original de ivam3
+
+	"
+
+git clone https://github.com/ivam3/Termux_login.git
+
+cd /data/data/com.termux/files/usr/etc
+
+rm bashito
+
+cp bash.bashrc copybashbashrc2
+ 
+cp bash.bashrc copybashbashrc1
+
+cd $HOME
+
+cd Termux_login 
+
+chmod 777 install.sh
+
+bash install.sh
+
+	echo "
+
+	el script de ivam3 ha sido clonado y ejecutado satisfactoriamente
+
+	"
+
+	echo "
+
+	resolviendo errores
+
+	"
+
+cd $HOME
+
+cd login
+
+mv bashito /data/data/com.termux/files/usr/etc
+
+cd /data/data/com.termux/files/usr/etc
+
+rm bash.bashrc
+
+mv -v bashito bash.bashrc
+
+	echo " 
+
+	[ DONE ]   
+
+	"
+
+	echo "
+
+	Abre una nueva sesion y disfruta tu login banner
+
+	"
+
+
+
